@@ -1,0 +1,24 @@
+$sidePadding: 40px;
+$sidePaddingTablet: 20px;
+$sidePaddingMobile: 12px;
+
+$verticalPadding: 100px;
+$verticalPaddingTablet: 50px;
+$verticalPaddingMobile: 25px;
+
+$containerMaxWidth: 1440px;
+$containerMaxWidthTablet: 820px;
+$containerMaxWidthMobile: 380px;
+
+
+@mixin useTabletContainer {
+    & .container {
+        max-width: $containerMaxWidthTablet;
+    }
+}
+
+@mixin useMobileContainer {
+    & .container {
+        max-width: $containerMaxWidthMobile;
+    }
+}
